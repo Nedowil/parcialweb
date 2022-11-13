@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navigation') %>
+    <div class="container d-flex justify-content-center align-items-center">
+
+        <div class="card text-center">
+            <div class="card-header">
+                <h1>Contactenos</h1>
+
+            </div>
+            <div class="card-body text-start">
+                <form>
+                    
+                    <div class="mb-2">
+                    <label for="nombre">Nombres</label>
+                    <input type="nombre" placeholder="Nombre" class="form-control">
+                    </div>
+                    
+                    <div class="mb-2">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="apellidos" placeholder="Apellidos" class="form-control">
+                    </div>
+                    
+                    <div class="mb-2">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                    
+                    <div class="mb-2">
+                    <label for="direccion">Direccion</label>
+                    <input type="direccion" placeholder="Direccion" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                    <label for="departamento">Departamento</label>
+                    <input type="departamento" placeholder="Departamento" class="form-control">
+                    </div>
+                    
+                    <div class="mb-2">
+                    <label for="municipio">Municipio</label>
+                    <input type="municipio" placeholder="Municipio" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                    <label for="mesage">Mensaje:</label>
+                    <textarea name="message" rows="5" class="form-control" placeholder="Escriba su duda"></textarea>
+                    </div>        
+                    
+                    <button class="btn btn-primary btn-block">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
